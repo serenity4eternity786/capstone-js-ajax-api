@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $("#submitButton").on('click', function (event) {
     //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
     event.preventDefault();
@@ -44,6 +45,19 @@ function doit(inputQuality) {
         success: function (datacards) {
             //console.log(datacards);
             displaySearchResults(datacards, inputQuality);
+=======
+function doIt() {
+    var datainfo = $.ajax({
+        url: 'https://omgvamp-hearthstone-v1.p.mashape.com/info/', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+        type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
+        data: {}, // Additional parameters here
+        dataType: 'json',
+        success: function (datainfo) {
+            //
+            //Change data.source to data.something , where something is whichever part of the object you want returned.
+            //To see the whole object you can output it to your browser console using:
+            console.log(datainfo);            
+>>>>>>> origin/master
         },
 
         error: function (err) {
@@ -108,9 +122,13 @@ function displaySearchResults(allCardsArray, inputQuality) {
                 }
             });
         }
+<<<<<<< HEAD
 
         imageOutput += "<li>";
 
+=======
+        
+>>>>>>> origin/master
     });
     //filtering data
     //    $.each(allCardsArray, function (inputPlayerClass) {
@@ -335,5 +353,28 @@ function displaySearchResults(allCardsArray, inputQuality) {
 
     //});
 
+<<<<<<< HEAD
     $("#output").html(imageOutput);
+=======
+    var datacards = $.ajax({
+        url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+        type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
+        data: {}, // Additional parameters here
+        dataType: 'json',
+        success: function (datacards) {
+            //
+            //Change data.source to data.something , where something is whichever part of the object you want returned.
+            //To see the whole object you can output it to your browser console using:
+            console.log(datacards);
+            
+        },
+        error: function (err) {
+            alert(err);
+        },
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "WSWRlNjNUEmshRZyglgBobs9R6Uop1a9fC8jsnUZaFZwRpGFgX"); // Enter here your Mashape key
+        }
+        
+    });
+>>>>>>> origin/master
 }
