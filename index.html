@@ -14,122 +14,105 @@
         <img src="images-cap/hearthstone-logo.png" alt="hearthstone-logo" class="website-logo">
     </header>
     <section class="data-input">
-        <div class="formGroup">
-            <label for="inputClass">Select a Class (Required):</label>
-            <select name="inputClass" class="inputClass">
-                <option value="Neutral">Neutral</option>
-                <option value="Druid">Druid</option>
-                <option value="Hunter">Hunter</option>
-                <option value="Mage">Mage</option>
-                <option value="Paladin">Paladin</option>
-                <option value="Priest">Priest</option>
-                <option value="Rogue">Rogue</option>
-                <option value="Shaman">Shaman</option>
-                <option value="Warlock">Warlock</option>
-                <option value="Warrior">Warrior</option>
-            </select>
-        </div>
+        <form action="" id=“search-form”>
+<!--
+            <div class="formGroup">
 
-        <div class="formGroup">
-            <label for="inputRarity">Rarity:</label>
-            <select name="inputRarity" class="inputRarity">
-                <option value="" disabled selected>Select</option>
-                <option value="Free">Free</option>
-                <option value="Common">Common</option>
-                <option value="Rare">Rare</option>
-                <option value="Epic">Epic</option>
-                <option value="Legendary">Legendary</option>
-            </select>
-        </div>
+    <label for="inputPlayerClass">Select a Class (Required):</label>
+    <select name="inputPlayerClass" class="inputPlayerClass">
+        <option value="Druid">Druid</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Mage">Mage</option>
+        <option value="Paladin">Paladin</option>
+        <option value="Priest">Priest</option>
+        <option value="Rogue">Rogue</option>
+        <option value="Shaman">Shaman</option>
+        <option value="Warlock">Warlock</option>
+        <option value="Warrior">Warrior</option>
+    </select>
+</div>
+-->
 
-        <div class="formGroup">
-            <label for="inputCost">Cost:</label>
-            <select name="inputCost" class="inputCost">
-                <option value="" disabled selected>Select</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-            </select>
-        </div>
+            <div class="formGroup">
+                <label for="inputQuality">Qualities:</label>
+                <select name="inputQuality" class="inputQuality">
+                    <option value="" disabled selected>Select</option>
+                    <option value="Free">Free</option>
+                    <option value="Common">Common</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Legendary">Legendary</option>
+                </select>
+            </div>
 
-        <div class="formGroup">
-            <label for="inputHealth">Health:</label>
-            <select name="inputHealth" class="inputHealth">
-                <option value="" disabled selected>Select</option>
-                <option value="0-10">0-10</option>
-                <option value="11-25">11-25</option>
-                <option value="26-50">26-50</option>
-                <option value="51-75">51-75</option>
-                <option value="76-100">76-100</option>
-                <option value="101-200">101+</option>
-            </select>
-        </div>
 
-        <div class="formGroup">
-            <label for="inputAttack">Attack:</label>
-            <select name="inputAttack" class="inputAttack">
-                <option value="" disabled selected>Select</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-            </select>
-        </div>
-        <div class="buttonWrapper">
-            <button onclick="doIt()">Run the request</button>
-        </div>
+
+            <!--
+            <div class="formGroup">
+                <label for="inputCost">Cost:</label>
+                <select name="inputCost" class="inputCost">
+                    <option value="" disabled selected>Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+
+            <div class="formGroup">
+                <label for="inputHealth">Health:</label>
+                <select name="inputHealth" class="inputHealth">
+                    <option value="" disabled selected>Select</option>
+                    <option value="0-10">0-10</option>
+                    <option value="11-25">11-25</option>
+                    <option value="26-50">26-50</option>
+                    <option value="51-75">51-75</option>
+                    <option value="76-100">76-100</option>
+                    <option value="101-200">101+</option>
+                </select>
+            </div>
+
+            <div class="formGroup">
+                <label for="inputAttack">Attack:</label>
+                <select name="inputAttack" class="inputAttack">
+                    <option value="" disabled selected>Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select>
+            </div>
+-->
+            <div class="buttonWrapper">
+
+                <button type="submit" id="submitButton">Run the request</button>
+            </div>
+        </form>
     </section>
     <section class="results-outputs">
         <ul id="output">
-            <li>
-                <h2>Name (cardSet) </h2>
-                <h3>playerClass</h3>
-                <p>Increased Attack.</p>
-                <h4>type</h4>
-            </li>
-
-            <li>
-                <h2>Name (cardSet) </h2>
-                <h3>playerClass</h3>
-                <p>Increased Attack.</p>
-                <h4>type</h4>
-            </li>
-            <li>
-                <h2>Name (cardSet) </h2>
-                <h3>playerClass</h3>
-                <p>Increased Attack.</p>
-                <h4>type</h4>
-            </li>
-            <li>
-                <h2>Name (cardSet) </h2>
-                <h3>playerClass</h3>
-                <p>Increased Attack.</p>
-                <h4>type</h4>
-            </li>
-
         </ul>
 
     </section>
@@ -146,7 +129,7 @@
             </a>
         </div>
     </footer>
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="js-cap/app.js" type="text/javascript"></script>
 
 </body>

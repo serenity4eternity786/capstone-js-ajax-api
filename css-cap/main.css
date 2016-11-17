@@ -153,8 +153,33 @@ section #output {
 }
 
 section #output li {
+    /*
     display: inline-block;
-    width: 24%;
+width: 24%;
+*/
+    display: inline-block;
+}
+
+section #output li ul {
+    margin-left: 1.5%;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    width: 31%;
+    padding: 3%;
+}
+
+section #output li h4 {
+    margin-top: 2%;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+}
+
+section #output li .image-card {
+    width: 100%;
+}
+
+section #output li .card-specs {
+    min-height: 150px;
 }
 
 
