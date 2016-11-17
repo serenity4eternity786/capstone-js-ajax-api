@@ -58,7 +58,7 @@ function doit(inputQuality) {
 
 function checkImages(imageURL) {
     if (typeof imageURL === 'undefined' || imageURL == null) {
-        return "/images-cap/hearthstone-default-card.png";
+        return "images-cap/hearthstone-default-card.png";
     } else {
         return imageURL;
     }
