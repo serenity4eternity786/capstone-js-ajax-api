@@ -1,3 +1,5 @@
+ $('.scroll').jscroll();
+
 $("#submitButton").on('click', function (event) {
     //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
     event.preventDefault();
@@ -8,6 +10,8 @@ $("#submitButton").on('click', function (event) {
     //    var inputHealth = $(".inputHealth").val();
     //    var inputAttack = $(".inputAttack").val();
     //use that value to call the getResults function defined bellow
+    var imageOutput = "<li class='spin-image'><img  src='../images-cap/spin2.png'></li>";
+    $("#output").html(imageOutput);
     doit(inputQuality);
 });
 
@@ -55,6 +59,7 @@ function doit(inputQuality) {
 
     });
 }
+
 
 function checkImages(imageURL) {
     if (typeof imageURL === 'undefined' || imageURL == null) {
@@ -112,6 +117,8 @@ function displaySearchResults(allCardsArray, inputQuality) {
         imageOutput += "<li>";
 
     });
+    
+  
     //filtering data
     //    $.each(allCardsArray, function (inputPlayerClass) {
     //

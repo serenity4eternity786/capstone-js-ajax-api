@@ -159,6 +159,18 @@ width: 24%;
 */
     display: inline-block;
 }
+section #output .spin-image {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+section #output .spin-image img {
+    width: 30px;
+    height: 30px;
+    
+    margin: 0 auto;
+}
 
 section #output li ul {
     margin-left: 1.5%;
