@@ -10,9 +10,9 @@ $("#submitButton").on('click', function (event) {
     //    var inputHealth = $(".inputHealth").val();
     //    var inputAttack = $(".inputAttack").val();
     //use that value to call the getResults function defined bellow
-    var imageOutput = "<li class='spin-image'><img  src='../images-cap/loading_spinner.gif'></li>";
+    var imageOutput = "<li class='spin-image'><img  src='images-cap/loading_spinner.gif'></li>";
     $("#output").html(imageOutput);
-    //doit(inputQuality);
+    doit(inputQuality);
 });
 
 
