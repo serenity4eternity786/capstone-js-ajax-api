@@ -12,7 +12,7 @@ $("#submitButton").on('click', function (event) {
     //use that value to call the getResults function defined bellow
     var imageOutput = "<li class='spin-image'><img  src='../images-cap/loading_spinner.gif'></li>";
     $("#output").html(imageOutput);
-    doit(inputQuality);
+    //doit(inputQuality);
 });
 
 
