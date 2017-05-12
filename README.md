@@ -15,6 +15,6 @@ You can access HearthSearch at https://serenity4eternity786.github.io/capstone-j
 
 ## Technical
 * This website is made with Javascript/JQuery, HTML and CSS
-* This website is responsive but not for mobile. 
+* This website is responsive. 
 * The API used was aquired from: https://market.mashape.com/omgvamp/hearthstone
 * It does take a couple of seconds for the cards to load due to the amount of data. 
