@@ -131,7 +131,41 @@ section select {
     color: black;
     font-size: 1rem;
     padding: 0.1rem;
+    background-color: #5574BD;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
+
+section select-content {
+    display: none;
+    position: absolute;
+    background-color: #5574BD;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+section select-content a {
+    color: black;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+
+section select-content a:hover {background-color: #f1f1f1}
+
+section select:hover .dropdown-content {
+    display: block;
+}
+
+section select:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 
 section .buttonWrapper {
     text-align: right;
@@ -165,30 +199,34 @@ section button {
   margin: 5px;
 }
 
-section button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+section button:hover {
+    background-color: #061539;
 }
 
-section button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+/*section button span {*/
+/*  cursor: pointer;*/
+/*  display: inline-block;*/
+/*  position: relative;*/
+/*  transition: 0.5s;*/
+/*}*/
 
-submitButton:hover span {
-  padding-right: 25px;
-}
+/*section button span:after {*/
+/*  content: '\00bb';*/
+/*  position: absolute;*/
+/*  opacity: 0;*/
+/*  top: 0;*/
+/*  right: -20px;*/
+/*  transition: 0.5s;*/
+/*}*/
 
-submitButton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+/*submitButton:hover span {*/
+/*  padding-right: 25px;*/
+/*}*/
+
+/*submitButton:hover span:after {*/
+/*  opacity: 1;*/
+/*  right: 0;*/
+/*}*/
 
 section #output {
     list-style: none;
