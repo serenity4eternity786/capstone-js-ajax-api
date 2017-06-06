@@ -117,12 +117,13 @@ section select {
     display: inline-block;
 }
 
-section label {
-    width: 80%;
-}
+section label {    
+        width: 100%;    
+        text-align: center;    
+        margin-bottom: 20px; }
 
 section select {
-    float: left;
+    float: none;
     cursor: pointer;
     background-color: lightgray;
     border-color: darkgray;
@@ -138,6 +139,8 @@ section select {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
 }
 
 section select-content {
@@ -185,7 +188,7 @@ section .buttonWrapper {
 /*}*/
 
 section button {
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   background-color: #5574BD;
   border: none;
@@ -196,7 +199,7 @@ section button {
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 35px auto;
 }
 
 section button:hover {
@@ -256,8 +259,10 @@ section #output li ul {
     margin-left: 1.5%;
     border-bottom: 1px solid white;
     display: inline-block;
-    width: 31%;
+    width: 100%;
     padding: 3%;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 section #output li h4 {
@@ -271,7 +276,11 @@ section #output li .image-card {
 }
 
 section #output li .card-specs {
-    min-height: 150px;
+    /*min-height: 150px;*/
+}
+
+section, footer {
+    width: 90%;
 }
 
 
