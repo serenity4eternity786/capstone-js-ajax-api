@@ -86,7 +86,13 @@ header {
     width: 33%
 }
 
+img {
+    position: relative;
+}
 
+p{
+    position: relative;
+}
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
@@ -94,7 +100,8 @@ Content styles (Main Module)
 
 section,
 footer {
-    width: 70%;
+    width: 40%;
+    text-align: center;
     margin: 1rem auto;
     background-image: url("../images-cap/transparent.jpg");
     border-radius: 0.5rem;
@@ -105,7 +112,7 @@ section .formGroup {
     display: block;
     margin: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
+    /*border-bottom: 1px solid lightgray;*/
 }
 
 section .formGroup:last-child {
@@ -141,6 +148,7 @@ section select {
     cursor: pointer;
     margin: 0 auto;
     display: block;
+    width: 100%;
 }
 
 section select-content {
@@ -196,10 +204,10 @@ section button {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
+  width: 100%;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 35px auto;
+  margin: -10px 35px auto auto;
 }
 
 section button:hover {
@@ -279,9 +287,6 @@ section #output li .card-specs {
     /*min-height: 150px;*/
 }
 
-section, footer {
-    width: 90%;
-}
 
 
 /* -------------------------------------
