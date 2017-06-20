@@ -248,6 +248,7 @@ section #output li {
     display: inline-block;
 width: 24%;
 */
+    width: 80%;
     display: inline-block;
 }
 section #output .spin-image {
